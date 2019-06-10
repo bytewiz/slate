@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;javascript&quot;,&quot;typescript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -211,10 +211,8 @@
     <div class="toc-wrapper">
       <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="typescript">typescript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -225,19 +223,225 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#principals" class="toc-h1 toc-link" data-title="Principals">Principals</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#signal-to-noice-ratio" class="toc-h2 toc-link" data-title="Signal to noice ratio">Signal to noice ratio</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#dry" class="toc-h2 toc-link" data-title="DRY">DRY</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#naming" class="toc-h1 toc-link" data-title="Naming">Naming</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#general" class="toc-h2 toc-link" data-title="General">General</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#classes" class="toc-h2 toc-link" data-title="Classes">Classes</a>
+                  </li>
+                  <li>
+                    <a href="#functions-methods" class="toc-h2 toc-link" data-title="Functions/Methods">Functions/Methods</a>
+                  </li>
+                  <li>
+                    <a href="#warning-signs" class="toc-h2 toc-link" data-title="Warning Signs">Warning Signs</a>
+                  </li>
+                  <li>
+                    <a href="#abbreviations" class="toc-h2 toc-link" data-title="Abbreviations">Abbreviations</a>
+                  </li>
+                  <li>
+                    <a href="#booleans" class="toc-h2 toc-link" data-title="Booleans">Booleans</a>
+                  </li>
+                  <li>
+                    <a href="#summary" class="toc-h2 toc-link" data-title="Summary">Summary</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#classes" class="toc-h1 toc-link" data-title="Classes">Classes</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#when-to-create-a-class" class="toc-h2 toc-link" data-title="When to create a class">When to create a class</a>
+                  </li>
+                  <li>
+                    <a href="#high-cohesion" class="toc-h2 toc-link" data-title="High Cohesion">High Cohesion</a>
+                  </li>
+                  <li>
+                    <a href="#primitive-obsession" class="toc-h2 toc-link" data-title="Primitive obsession">Primitive obsession</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#functions-methods" class="toc-h1 toc-link" data-title="Functions/methods">Functions/methods</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#when-to-create-functions" class="toc-h2 toc-link" data-title="When to create functions">When to create functions</a>
+                  </li>
+                  <li>
+                    <a href="#arrow-code" class="toc-h2 toc-link" data-title="Arrow code">Arrow code</a>
+                  </li>
+                  <li>
+                    <a href="#convey-intent" class="toc-h2 toc-link" data-title="Convey intent">Convey intent</a>
+                  </li>
+                  <li>
+                    <a href="#do-one-thing" class="toc-h2 toc-link" data-title="Do one thing!">Do one thing!</a>
+                  </li>
+                  <li>
+                    <a href="#watch-for-flag-arguments" class="toc-h2 toc-link" data-title="Watch for flag arguments">Watch for flag arguments</a>
+                  </li>
+                  <li>
+                    <a href="#how-many-parameters" class="toc-h2 toc-link" data-title="How many parameters?">How many parameters?</a>
+                  </li>
+                  <li>
+                    <a href="#sign-that-a-function-is-too-long" class="toc-h2 toc-link" data-title="Sign that a function is too long">Sign that a function is too long</a>
+                  </li>
+                  <li>
+                    <a href="#exceptions" class="toc-h2 toc-link" data-title="Exceptions">Exceptions</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#conditionals" class="toc-h1 toc-link" data-title="Conditionals">Conditionals</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#be-declarative-if-possible" class="toc-h2 toc-link" data-title="Be declarative if possible!">Be declarative if possible!</a>
+                  </li>
+                  <li>
+                    <a href="#intermediate-variables-amp-magic-numbers" class="toc-h2 toc-link" data-title="Intermediate variables &amp; Magic numbers">Intermediate variables &amp; Magic numbers</a>
+                  </li>
+                  <li>
+                    <a href="#ternary-can-be-elegant" class="toc-h2 toc-link" data-title="Ternary can be elegant">Ternary can be elegant</a>
+                  </li>
+                  <li>
+                    <a href="#don-39-t-be-anti-negative" class="toc-h2 toc-link" data-title="Don't be anti-negative">Don't be anti-negative</a>
+                  </li>
+                  <li>
+                    <a href="#evaluate-booleans-implicitly" class="toc-h2 toc-link" data-title="Evaluate booleans implicitly">Evaluate booleans implicitly</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#comments" class="toc-h1 toc-link" data-title="Comments">Comments</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#general-rules" class="toc-h2 toc-link" data-title="General rules">General rules</a>
+                  </li>
+                  <li>
+                    <a href="#zombie-code" class="toc-h2 toc-link" data-title="Zombie code">Zombie code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#react" class="toc-h1 toc-link" data-title="React">React</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#stateless-pure-components" class="toc-h2 toc-link" data-title="Stateless/Pure Components">Stateless/Pure Components</a>
+                  </li>
+                  <li>
+                    <a href="#naming" class="toc-h2 toc-link" data-title="Naming">Naming</a>
+                  </li>
+                  <li>
+                    <a href="#props" class="toc-h2 toc-link" data-title="Props">Props</a>
+                  </li>
+                  <li>
+                    <a href="#render-function" class="toc-h2 toc-link" data-title="Render function">Render function</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#styling" class="toc-h1 toc-link" data-title="Styling">Styling</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#scss" class="toc-h2 toc-link" data-title="SCSS">SCSS</a>
+                  </li>
+                  <li>
+                    <a href="#styled-components" class="toc-h2 toc-link" data-title="Styled-components">Styled-components</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#linting-amp-formatting" class="toc-h1 toc-link" data-title="Linting &amp; Formatting">Linting &amp; Formatting</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#linting" class="toc-h2 toc-link" data-title="Linting">Linting</a>
+                  </li>
+                  <li>
+                    <a href="#formatting" class="toc-h2 toc-link" data-title="Formatting">Formatting</a>
+                  </li>
+                  <li>
+                    <a href="#process" class="toc-h2 toc-link" data-title="Process">Process</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#testing" class="toc-h1 toc-link" data-title="Testing">Testing</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#unit-tests" class="toc-h2 toc-link" data-title="Unit tests">Unit tests</a>
+                  </li>
+                  <li>
+                    <a href="#e2e" class="toc-h2 toc-link" data-title="E2E">E2E</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#glossary" class="toc-h1 toc-link" data-title="Glossary">Glossary</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#signal-to-noise-ratio" class="toc-h2 toc-link" data-title="Signal to Noise Ratio">Signal to Noise Ratio</a>
+                  </li>
+                  <li>
+                    <a href="#side-effects" class="toc-h2 toc-link" data-title="Side Effects">Side Effects</a>
+                  </li>
+                  <li>
+                    <a href="#magnet-class" class="toc-h2 toc-link" data-title="Magnet Class">Magnet Class</a>
+                  </li>
+                  <li>
+                    <a href="#cohesion" class="toc-h2 toc-link" data-title="Cohesion">Cohesion</a>
+                  </li>
+                  <li>
+                    <a href="#the-outline-rule" class="toc-h2 toc-link" data-title="The Outline Rule">The Outline Rule</a>
+                  </li>
+                  <li>
+                    <a href="#cyclomatic-complexity" class="toc-h2 toc-link" data-title="Cyclomatic Complexity">Cyclomatic Complexity</a>
+                  </li>
+                  <li>
+                    <a href="#intermediate-variable" class="toc-h2 toc-link" data-title="Intermediate Variable">Intermediate Variable</a>
+                  </li>
+                  <li>
+                    <a href="#zombie-code" class="toc-h2 toc-link" data-title="Zombie Code">Zombie Code</a>
+                  </li>
+                  <li>
+                    <a href="#stringly-typed" class="toc-h2 toc-link" data-title="Stringly Typed">Stringly Typed</a>
+                  </li>
+                  <li>
+                    <a href="#primitive-obsession" class="toc-h2 toc-link" data-title="Primitive Obsession">Primitive Obsession</a>
+                  </li>
+                  <li>
+                    <a href="#dry" class="toc-h2 toc-link" data-title="DRY">DRY</a>
+                  </li>
+                  <li>
+                    <a href="#return-early" class="toc-h2 toc-link" data-title="Return Early">Return Early</a>
+                  </li>
+                  <li>
+                    <a href="#fail-fast" class="toc-h2 toc-link" data-title="Fail Fast">Fail Fast</a>
+                  </li>
+                  <li>
+                    <a href="#fail-slow" class="toc-h2 toc-link" data-title="Fail slow">Fail slow</a>
+                  </li>
+                  <li>
+                    <a href="#table-driven-method" class="toc-h2 toc-link" data-title="Table Driven Method">Table Driven Method</a>
+                  </li>
+                  <li>
+                    <a href="#mayfly-variables" class="toc-h2 toc-link" data-title="Mayfly Variables">Mayfly Variables</a>
+                  </li>
+                  <li>
+                    <a href="#broken-window-theory" class="toc-h2 toc-link" data-title="Broken Window Theory">Broken Window Theory</a>
+                  </li>
+                  <li>
+                    <a href="#boy-scout-rule" class="toc-h2 toc-link" data-title="Boy Scout Rule">Boy Scout Rule</a>
                   </li>
               </ul>
           </li>
@@ -247,191 +451,1309 @@
       </ul>
         <ul class="toc-footer">
             <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
-
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
+<p>Purpose: Write human readable code!</p>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+Code reviews will be judged by the following
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id='principals'>Principals</h1><h2 id='signal-to-noice-ratio'>Signal to noice ratio</h2>
+<p>What about your code? Surely that is all signal right? After all, we can’t delete 50% of the lines and leave the behaviour of the code intact. But the truth is that code can be written in a very noisy way. This happens when so much code for logging, or caching, or error handling, (or whatever) is mixed in that the structure and intent of the method in question is obscured from view.</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p>The solution is simple: write clean code. Extract each task out into small, well-named helper methods or dependencies. This allows people to see the “signal” of what is going on, and only delve into the details that are of interest to them. Implementation details are usually noise.</p>
+<h3 id='signal'>Signal</h3>
+<p>Logic that follows the TED rule:</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
+<ul>
+<li><strong>T</strong>erse</li>
+<li><strong>E</strong>xpressive</li>
+<li><strong>D</strong>o one thing</li>
+</ul>
+<h3 id='noise'>Noise</h3>
+<ul>
+<li>High cyclomatic complexity</li>
+<li>Excessice indentation</li>
+<li>Zombie code</li>
+<li>Unnecessary comments</li>
+<li>Poorly named structures</li>
+<li>Huge classes</li>
+<li>Long methods</li>
+<li>Repetition</li>
+<li>No whitespace</li>
+<li>Overly verbose</li>
+</ul>
+<h2 id='dry'>DRY</h2>
+<p>Simply do not repeat yourself, make abstractions to solve this.</p>
+<h3 id='helps'>Helps</h3>
+<ul>
+<li>Decrease signal to noice ratio</li>
+<li>Decrease number of lines of code</li>
+</ul>
+<h1 id='naming'>Naming</h1>
+<p>This section is about assigning the correct naming conventions.</p>
+<h2 id='general'>General</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">p</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">];</span>
+<span class="kd">let</span> <span class="nx">t</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="k">in</span> <span class="nx">p</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">t</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="nx">t</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">const</span> <span class="nx">p</span><span class="p">:</span> <span class="kr">number</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">];</span>
+<span class="kd">let</span> <span class="nx">t</span><span class="p">:</span> <span class="kr">number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="k">in</span> <span class="nx">p</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">t</span> <span class="o">+=</span> <span class="nx">i</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="nx">t</span><span class="p">;</span>
 </code></pre>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>Good example</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">prices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">];</span>
+<span class="kd">let</span> <span class="nx">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">price</span> <span class="k">in</span> <span class="nx">prices</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">total</span> <span class="o">+=</span> <span class="nx">price</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="nx">total</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">const</span> <span class="nx">prices</span><span class="p">:</span> <span class="kr">number</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">];</span>
+<span class="kd">let</span> <span class="nx">total</span><span class="p">:</span> <span class="kr">number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">price</span> <span class="k">in</span> <span class="nx">prices</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">total</span> <span class="o">+=</span> <span class="nx">price</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="nx">total</span><span class="p">;</span>
+</code></pre>
+<p>You should be able to read code like you would read a book</p>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+<p><strong>Notice</strong>
+That it is a lot harder to understand the intent and context of the code in the first example</p>
+<h2 id='classes'>Classes</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">WebsiteBO</span>
+<span class="nx">Utility</span>
+<span class="nx">Common</span>
+<span class="nx">MyFunctions</span>
+<span class="nx">JimmysObjects</span>
+<span class="o">*</span><span class="nx">Manager</span> <span class="o">/</span> <span class="o">*</span><span class="nx">Processor</span> <span class="o">/</span> <span class="o">*</span><span class="nx">Info</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="nx">WebsiteBO</span>
+<span class="nx">Utility</span>
+<span class="nx">Common</span>
+<span class="nx">MyFunctions</span>
+<span class="nx">JimmysObjects</span>
+<span class="o">*</span><span class="nx">Manager</span> <span class="o">/</span> <span class="o">*</span><span class="nx">Processor</span> <span class="o">/</span> <span class="o">*</span><span class="nx">Info</span>
+</code></pre>
+<blockquote>
+<p>Good examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">User</span><span class="p">;</span>
+<span class="nx">Account</span><span class="p">;</span>
+<span class="nx">QueryBuilder</span><span class="p">;</span>
+<span class="nx">ProductRepository</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="nx">User</span><span class="p">;</span>
+<span class="nx">Account</span><span class="p">;</span>
+<span class="nx">QueryBuilder</span><span class="p">;</span>
+<span class="nx">ProductRepository</span><span class="p">;</span>
+</code></pre>
+<p>Guidelines:</p>
+
+<ul>
+<li>Noun</li>
+<li>Be specific</li>
+<li>Single Responsibility</li>
+<li>Avoid generic suffices</li>
+</ul>
+<h2 id='functions-methods'>Functions/Methods</h2>
+<blockquote>
+<p>Bad examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">Get</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Process</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Pending</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Dolt</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Start</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">On_Init</span><span class="p">,</span> <span class="nx">Page_Load</span><span class="p">(),</span> <span class="nx">etc</span><span class="p">..</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">Get</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Process</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Pending</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Dolt</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">Start</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">On_Init</span><span class="p">,</span> <span class="nx">Page_Load</span><span class="p">(),</span> <span class="nx">etc</span><span class="p">..</span>
+</code></pre>
+<blockquote>
+<p>Good examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">GetRegisteredUsers</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">IsValidSubmission</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">ImportDocument</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">SendEmail</span><span class="p">()</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">GetRegisteredUsers</span><span class="p">();</span>
+<span class="kd">function</span> <span class="nx">IsValidSubmission</span><span class="p">();</span>
+<span class="kd">function</span> <span class="nx">ImportDocument</span><span class="p">();</span>
+<span class="kd">function</span> <span class="nx">SendEmail</span><span class="p">();</span>
+</code></pre>
+<p>Method names should be precise and explain exactly what it does</p>
+<h2 id='warning-signs'>Warning Signs</h2>
+<blockquote>
+<p>Doing too much</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="o">*</span> <span class="nx">And</span>
+<span class="o">*</span> <span class="nx">If</span>
+<span class="o">*</span> <span class="nx">Or</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="o">*</span> <span class="nx">And</span>
+<span class="o">*</span> <span class="nx">If</span>
+<span class="o">*</span> <span class="nx">Or</span>
+</code></pre>
+<blockquote>
+<p>Watch our for side effects</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="o">*</span> <span class="nx">CheckPassword</span> <span class="nx">should</span> <span class="nx">not</span> <span class="nx">log</span> <span class="nx">users</span> <span class="nx">out</span><span class="p">.</span>
+<span class="o">*</span> <span class="nx">ValidateSubmission</span> <span class="nx">shouldn</span> <span class="nx">not</span> <span class="nx">save</span><span class="p">.</span>
+<span class="o">*</span> <span class="nx">GetUser</span> <span class="nx">shouldn</span> <span class="nx">not</span> <span class="nx">create</span> <span class="nx">their</span> <span class="nx">session</span><span class="p">.</span>
+<span class="o">*</span> <span class="nx">ChargeCreditCard</span> <span class="nx">shouldn</span> <span class="nx">not</span> <span class="nx">send</span> <span class="nx">emails</span><span class="p">.</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="o">*</span> <span class="nx">CheckPassword</span> <span class="nx">should</span> <span class="nx">not</span> <span class="nx">log</span> <span class="nx">users</span> <span class="nx">out</span><span class="p">.</span>
+<span class="o">*</span> <span class="nx">ValidateSubmission</span> <span class="nx">shouldn</span> <span class="nx">not</span> <span class="nx">save</span><span class="p">.</span>
+<span class="o">*</span> <span class="nx">GetUser</span> <span class="nx">shouldn</span> <span class="nx">not</span> <span class="nx">create</span> <span class="nx">their</span> <span class="nx">session</span><span class="p">.</span>
+<span class="o">*</span> <span class="nx">ChargeCreditCard</span> <span class="nx">shouldn</span> <span class="nx">not</span> <span class="nx">send</span> <span class="nx">emails</span><span class="p">.</span>
+</code></pre>
+<p>If you find yourself adding these words to a function/method name it is most likely doing too much</p>
+<h2 id='abbreviations'>Abbreviations</h2>
+<blockquote>
+<p>Bad examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">RegUsr</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">Registuser</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">RegiUser</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">RegisterUsr</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">RegUsr</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">Registuser</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">RegiUser</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">RegisterUsr</span><span class="p">;</span>
+</code></pre>
+<blockquote>
+<p>Good example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">RegisterUser</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">RegisterUser</span><span class="p">;</span>
+</code></pre>
+<p>Avoid using abbreviations!</p>
+
+<p>This will make it easier to talk about the code with others as it is natural language + there will be no misunderstanding around the abbreviations if there is none.</p>
+<h2 id='booleans'>Booleans</h2>
+<blockquote>
+<p>Bad examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">open</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">start</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">status</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">login</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">login</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">open</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">start</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">status</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">login</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">login</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Good examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">isOpen</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">done</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">isActive</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">loggedIn</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">loggedIn</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">isOpen</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">done</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">isActive</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">loggedIn</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">loggedIn</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</code></pre>
+<p>Boolean names should sound like true/false questions</p>
+<h3 id='be-symmetrical'>Be symmetrical</h3>
+<blockquote>
+<p>Bad examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">on</span><span class="p">,</span> <span class="nx">disabled</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">quick</span><span class="p">,</span> <span class="nx">slow</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">lock</span><span class="p">,</span> <span class="nx">open</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">slow</span><span class="p">,</span> <span class="nx">max</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">on</span><span class="p">,</span> <span class="nx">disabled</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">quick</span><span class="p">,</span> <span class="nx">slow</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">lock</span><span class="p">,</span> <span class="nx">open</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">slow</span><span class="p">,</span> <span class="nx">max</span><span class="p">;</span>
+</code></pre>
+<blockquote>
+<p>Good examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">on</span><span class="p">,</span> <span class="nx">off</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">fast</span><span class="p">,</span> <span class="nx">slow</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">lock</span><span class="p">,</span> <span class="nx">unlock</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">min</span><span class="p">,</span> <span class="nx">max</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">on</span><span class="p">,</span> <span class="nx">off</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">fast</span><span class="p">,</span> <span class="nx">slow</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">lock</span><span class="p">,</span> <span class="nx">unlock</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">min</span><span class="p">,</span> <span class="nx">max</span><span class="p">;</span>
+</code></pre>
+<p>When dealing with states that toggle, consistently use matching pairs</p>
+<h2 id='summary'>Summary</h2>
+<ul>
+<li>Strive for specific class names</li>
+<li>The name should explain it all</li>
+<li>Watch out for function side effects</li>
+<li>Booleans should sound &quot;truthy&quot; and &quot;falsy&quot;</li>
+<li>When struggling find a name try, explain it out loud</li>
+</ul>
+<h1 id='classes'>Classes</h1><h2 id='when-to-create-a-class'>When to create a class</h2>
+<ul>
+<li>New concept: Abtract or real-world</li>
+<li>Low cohesion: Methods should relate</li>
+<li>Promote reuse: Small and targeted = reuse</li>
+<li>Reduce complexity: Solve once and then hide away</li>
+<li>Clarify parameters: Identify a group of data</li>
+</ul>
+<h2 id='high-cohesion'>High Cohesion</h2>
+<blockquote>
+<p>Low Cohesion</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">class</span> <span class="nx">Vehicle</span> <span class="p">{</span>
+  <span class="nx">editVehicleOptions</span><span class="p">()</span>
+  <span class="nx">updatePricing</span><span class="p">()</span>
+  <span class="nx">scheduleMaintenance</span><span class="p">()</span>
+  <span class="nx">sendMaintenanceReminder</span><span class="p">()</span>
+  <span class="nx">selectFinancing</span><span class="p">()</span>
+  <span class="nx">calculateMonthlyPayment</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kr">class</span> <span class="nx">Vehicle</span> <span class="p">{</span>
+  <span class="nx">editVehicleOptions</span><span class="p">();</span>
+  <span class="nx">updatePricing</span><span class="p">();</span>
+  <span class="nx">scheduleMaintenance</span><span class="p">();</span>
+  <span class="nx">sendMaintenanceReminder</span><span class="p">();</span>
+  <span class="nx">selectFinancing</span><span class="p">();</span>
+  <span class="nx">calculateMonthlyPayment</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>High Cohesion</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">class</span> <span class="nx">Vehicle</span> <span class="p">{</span>
+  <span class="nx">editVehicleOptions</span><span class="p">()</span>
+  <span class="nx">updatePricing</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="kr">class</span> <span class="nx">VehicleMaintenance</span> <span class="p">{</span>
+  <span class="nx">scheduleMaintenance</span><span class="p">()</span>
+  <span class="nx">sendMaintenanceReminder</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="kr">class</span> <span class="nx">VehicleFinance</span> <span class="p">{</span>
+  <span class="nx">selectFinancing</span><span class="p">()</span>
+  <span class="nx">calculateMonthlyPayment</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kr">class</span> <span class="nx">Vehicle</span> <span class="p">{</span>
+  <span class="nx">editVehicleOptions</span><span class="p">();</span>
+  <span class="nx">updatePricing</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kr">class</span> <span class="nx">VehicleMaintenance</span> <span class="p">{</span>
+  <span class="nx">scheduleMaintenance</span><span class="p">();</span>
+  <span class="nx">sendMaintenanceReminder</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kr">class</span> <span class="nx">VehicleFinance</span> <span class="p">{</span>
+  <span class="nx">selectFinancing</span><span class="p">();</span>
+  <span class="nx">calculateMonthlyPayment</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre>
+<p>Classes responsibilties should be strongly related</p>
+
+<ul>
+<li>Enhances readability</li>
+<li>Increases likehood of reuse</li>
+<li>Avoid attracting lazy programmers</li>
+</ul>
+
+<p>Watch out for</p>
+
+<ul>
+<li>Methods that don&#39;t interact with the rest of the class</li>
+<li>Fields that are only used by one method</li>
+<li>Classes that change often</li>
+</ul>
+<h2 id='primitive-obsession'>Primitive obsession</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">saveUser</span><span class="p">({</span> <span class="nx">firstname</span><span class="p">,</span> <span class="nx">lastname</span><span class="p">,</span> <span class="nx">email</span><span class="p">,</span> <span class="nx">state</span><span class="p">,</span> <span class="nx">timezone</span><span class="p">,</span> <span class="nx">gender</span> <span class="p">})</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kr">interface</span> <span class="nx">IUser</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">firstname</span><span class="p">:</span> <span class="kr">string</span>
+  <span class="na">lastname</span><span class="p">:</span> <span class="kr">string</span>
+  <span class="na">email</span><span class="p">:</span> <span class="kr">string</span>
+  <span class="na">state</span><span class="p">:</span> <span class="kr">enum</span>
+  <span class="na">timezone</span><span class="p">:</span> <span class="kr">string</span>
+  <span class="na">gender</span><span class="p">:</span> <span class="kr">enum</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">saveUser</span><span class="p">({</span> <span class="nx">firstname</span><span class="p">,</span> <span class="nx">lastname</span><span class="p">,</span> <span class="nx">email</span><span class="p">,</span> <span class="nx">state</span><span class="p">,</span> <span class="nx">timezone</span><span class="p">,</span> <span class="nx">gender</span> <span class="p">}:</span> <span class="nx">IUser</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>Good example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">saveUser</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kr">interface</span> <span class="nx">IUser</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">firstname</span><span class="p">:</span> <span class="kr">string</span>
+  <span class="na">lastname</span><span class="p">:</span> <span class="kr">string</span>
+  <span class="na">email</span><span class="p">:</span> <span class="kr">string</span>
+  <span class="na">state</span><span class="p">:</span> <span class="kr">enum</span>
+  <span class="na">timezone</span><span class="p">:</span> <span class="kr">string</span>
+  <span class="na">gender</span><span class="p">:</span> <span class="kr">enum</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">saveUser</span><span class="p">(</span><span class="nx">user</span><span class="p">:</span> <span class="nx">IUser</span><span class="p">)</span>
+</code></pre>
+<p>Don&#39;t pass too many parameters</p>
+
+<ul>
+<li>Helps reader conceptualize</li>
+<li>Implicit =&gt; explicit</li>
+<li>Encapsulates</li>
+<li>Aids maintenance</li>
+</ul>
+<h1 id='functions-methods'>Functions/methods</h1><h2 id='when-to-create-functions'>When to create functions</h2>
+<ul>
+<li>To avoid duplication</li>
+<li>To avoid deep indentation</li>
+<li>To clearify an intent</li>
+<li>To avoid doing more than one task responsibility</li>
+</ul>
+<h2 id='arrow-code'>Arrow code</h2>
+<blockquote>
+<p>Extract method (Bad example)</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span>
+  <span class="k">if</span>
+    <span class="k">while</span>
+      <span class="cm">/*
+        Do
+        complex
+        logic here
+      */</span>
+  <span class="k">else</span>
+<span class="k">else</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span>
+  <span class="k">if</span>
+    <span class="k">while</span>
+      <span class="cm">/*
+        Do
+        complex
+        logic here
+      */</span>
+  <span class="k">else</span>
+<span class="k">else</span>
+</code></pre>
+<blockquote>
+<p>Extract method (Good example)</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span>
+  <span class="k">if</span>
+    <span class="nx">doComplexLogic</span><span class="p">()</span>
+  <span class="k">else</span>
+<span class="k">else</span>
+
+<span class="nx">doComplexLogic</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">while</span>
+    <span class="c1">// complex logic here</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span>
+  <span class="k">if</span>
+    <span class="nx">doComplexLogic</span><span class="p">()</span>
+  <span class="k">else</span>
+<span class="k">else</span>
+
+<span class="nx">doComplexLogic</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">while</span>
+    <span class="c1">// complex logic here</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Fail fast (Bad example)</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">registerUser</span><span class="p">(</span><span class="nx">username</span><span class="p">,</span> <span class="nx">password</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">username</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">password</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// register user logic here</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// return password validation error here</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// return username validation error here</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">registerUser</span><span class="p">(</span><span class="nx">username</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span> <span class="nx">password</span><span class="p">:</span> <span class="kr">string</span><span class="p">):</span> <span class="k">void</span> <span class="o">|</span> <span class="nx">error</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">username</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">password</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// register user logic here</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// return password validation error here</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// return username validation error here</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Fail fast (Good example)</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">registerUser</span><span class="p">(</span><span class="nx">username</span><span class="p">,</span> <span class="nx">password</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">username</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* return username validation error here */</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">password</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* return password validation error here */</span>
+  <span class="p">}</span>
+
+  <span class="c1">// register user logic here</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">registerUser</span><span class="p">(</span><span class="nx">username</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span> <span class="nx">password</span><span class="p">:</span> <span class="kr">string</span><span class="p">):</span> <span class="k">void</span> <span class="o">|</span> <span class="nx">error</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">username</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* return username validation error here */</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">password</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* return password validation error here */</span>
+  <span class="p">}</span>
+
+  <span class="c1">// register user logic here</span>
+<span class="p">}</span>
+</code></pre>
+<p>Comprehension decreases beyond three levels of nested &#39;if&#39; blocks
+(Noam Chomsky and Gerald Weinberg)</p>
+<h3 id='solutions-to-arrow-code'>Solutions to arrow code</h3>
+<ul>
+<li>Extract methods</li>
+<li>Fail fast</li>
+<li>Return early:
+use a return when it enhances readability. not returning immediately means that you have to write more code</li>
+</ul>
+<h2 id='convey-intent'>Convey intent</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="c1">// Check if for valid file extensions. Confirm admin or active</span>
+<span class="k">if</span> <span class="p">((</span><span class="nx">fileExtension</span> <span class="o">===</span> <span class="s1">'mp4'</span> <span class="o">||</span>
+    <span class="nx">fileExtension</span> <span class="o">===</span> <span class="s1">'mkv'</span> <span class="o">||</span>
+    <span class="nx">fileExtension</span> <span class="o">===</span> <span class="s1">'avi'</span><span class="p">)</span>
+    <span class="o">&amp;&amp;</span> <span class="nx">isAdmin</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="c1">// Check if for valid file extensions. Confirm admin or active</span>
+<span class="k">if</span> <span class="p">((</span><span class="nx">fileExtension</span> <span class="o">===</span> <span class="s1">'mp4'</span> <span class="o">||</span>
+    <span class="nx">fileExtension</span> <span class="o">===</span> <span class="s1">'mkv'</span> <span class="o">||</span>
+    <span class="nx">fileExtension</span> <span class="o">===</span> <span class="s1">'avi'</span><span class="p">)</span>
+    <span class="o">&amp;&amp;</span> <span class="nx">isAdmin</span><span class="p">;</span>
+</code></pre>
+<blockquote>
+<p>Good example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">ValidateFileRequest</span><span class="p">(</span><span class="nx">fileExtension</span><span class="p">,</span> <span class="nx">isAdmin</span><span class="p">))</span>
+
+<span class="kd">function</span> <span class="nx">ValidateFileRequest</span><span class="p">(</span><span class="nx">fileExtension</span><span class="p">,</span> <span class="nx">isAdmin</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">validFileExtensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'mp4'</span><span class="p">,</span> <span class="s1">'mkv'</span><span class="p">,</span> <span class="s1">'avi'</span><span class="p">];</span>
+
+  <span class="kr">const</span> <span class="nx">isValidFileType</span> <span class="o">=</span> <span class="nx">validFileExtensions</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">fileExtension</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">userIsAllowedToViewFile</span> <span class="o">=</span> <span class="nx">isAdmin</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="nx">isValidFileType</span> <span class="o">&amp;&amp;</span> <span class="nx">userIsAllowedToViewFile</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">ValidateFileRequest</span><span class="p">(</span><span class="nx">fileExtension</span><span class="p">,</span> <span class="nx">isAdmin</span><span class="p">))</span>
+  <span class="kd">function</span> <span class="nx">ValidateFileRequest</span><span class="p">(</span>
+    <span class="nx">fileExtension</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span>
+    <span class="nx">isAdmin</span><span class="p">:</span> <span class="kr">boolean</span>
+  <span class="p">):</span> <span class="kr">boolean</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">validFileExtensions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mp4"</span><span class="p">,</span> <span class="s2">"mkv"</span><span class="p">,</span> <span class="s2">"avi"</span><span class="p">];</span>
+
+    <span class="kd">const</span> <span class="nx">isValidFileType</span> <span class="o">=</span> <span class="nx">validFileExtensions</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">fileExtension</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">userIsAllowedToViewFile</span> <span class="o">=</span> <span class="nx">isAdmin</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="nx">isValidFileType</span> <span class="o">&amp;&amp;</span> <span class="nx">userIsAllowedToViewFile</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre>
+<p>your code should in most cases be able to convey the intent without the need of comments as you see in the example. Notice how second examples doesn&#39;t need to comment (noice).
+And notice how you cannot not be sure, in the first example, that the <code>fileExtension</code> variable is supposed to check if the file extensions are valid.</p>
+<h2 id='do-one-thing'>Do one thing!</h2>
+<p>A function should ONLY do one thing and aids</p>
+
+<ul>
+<li>Aids readability</li>
+<li>Promotes reuse</li>
+<li>Eases naming and testing</li>
+<li>Avoids side-effects</li>
+</ul>
+
+<aside class="notice">
+also see <a href="?javascript#warning-signs">warning signs</a>
 </aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<h2 id='watch-for-flag-arguments'>Watch for flag arguments</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">SaveUser</span><span class="p">(</span><span class="nx">user</span><span class="p">,</span> <span class="nx">shouldEmailUser</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// saves user</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">shouldEmailUser</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// email user</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">SaveUser</span><span class="p">(</span><span class="nx">user</span><span class="p">:</span> <span class="nx">IUser</span><span class="p">,</span> <span class="nx">shouldEmailUser</span><span class="p">:</span> <span class="kr">boolean</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// saves user</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">shouldEmailUser</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// email user</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>Good example</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">SaveUser</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// saves user</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">EmailUser</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// email user</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">SaveUser</span><span class="p">(</span><span class="nx">user</span><span class="p">:</span> <span class="nx">IUser</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// saves user</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">EmailUser</span><span class="p">(</span><span class="nx">user</span><span class="p">:</span> <span class="nx">IUser</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// email user</span>
+<span class="p">}</span>
+</code></pre>
+<p>Avoid flag arguments as that might mean that the function is doing more than one thing</p>
+<h2 id='how-many-parameters'>How many parameters?</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">saveUser</span><span class="p">(</span><span class="nx">user</span><span class="p">,</span> <span class="nx">sendEmail</span><span class="p">,</span> <span class="nx">emailFormat</span><span class="p">,</span> <span class="nx">printReport</span><span class="p">,</span> <span class="nx">sendBill</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// probably too much going on here</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">saveUser</span><span class="p">(</span><span class="nx">user</span><span class="p">:</span> <span class="nx">IUser</span><span class="p">,</span> <span class="nx">sendEmail</span><span class="p">:(</span><span class="nx">IUser</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">:</span> <span class="k">void</span><span class="p">,</span> <span class="nx">emailFormat</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span> <span class="nx">printReport</span><span class="p">:(</span><span class="nx">user</span><span class="p">:</span> <span class="nx">IUser</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="k">void</span><span class="p">,</span> <span class="nx">sendBill</span><span class="p">:</span> <span class="p">(</span><span class="nx">user</span><span class="p">:</span> <span class="nx">IUser</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="k">void</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// probably too much going on here</span>
+<span class="p">}</span>
+</code></pre>
+<ul>
+<li>Strive for 0-2 parameters</li>
+<li>Makes testing easier</li>
+<li>Eases understanding</li>
+<li>Helps assure function does only one thing</li>
+</ul>
+<h2 id='sign-that-a-function-is-too-long'>Sign that a function is too long</h2>
+<ul>
+<li>Whitespace &amp; Comments</li>
+<li>Scrolling required</li>
+<li>Naming issues</li>
+<li>Multiple conditionals</li>
+<li>Hard to digest</li>
+<li>Hard to test</li>
+</ul>
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>A function should:</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<ul>
+<li>rarely be over 20 lines</li>
+<li>hardly ever over 100 lines</li>
+<li>have no more than 3 parameters
+(<a href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin">Robert C. Martin, &quot;Clean Code&quot;</a>)</li>
+</ul>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<p><strong>Bottom line</strong>: Simple functions can be longer. Complex functions should be short.</p>
+<h2 id='exceptions'>Exceptions</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="c1">// Many</span>
+  <span class="c1">// lines</span>
+  <span class="c1">// of</span>
+  <span class="c1">// logic</span>
+  <span class="c1">// here</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// catch the error here</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="c1">// Many</span>
+  <span class="c1">// lines</span>
+  <span class="c1">// of</span>
+  <span class="c1">// logic</span>
+  <span class="c1">// here</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// catch the error here</span>
+<span class="p">}</span>
 </code></pre>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>Good example</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
-</span><span class="p">}</span><span class="w">
+<pre class="highlight javascript tab-javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">doComplicatedThings</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// catch the error here</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">doComplicatedThings</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Many</span>
+  <span class="c1">// lines</span>
+  <span class="c1">// of</span>
+  <span class="c1">// logic</span>
+  <span class="c1">// here</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">doComplicatedThings</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// catch the error here</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">doComplicatedThings</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Many</span>
+  <span class="c1">// lines</span>
+  <span class="c1">// of</span>
+  <span class="c1">// logic</span>
+  <span class="c1">// here</span>
+<span class="p">}</span>
+</code></pre>
+<ul>
+<li>Uncoverable</li>
+<li>Recoverable</li>
+<li>Ignorable</li>
+</ul>
+
+<p>Keep the body small!</p>
+<h1 id='conditionals'>Conditionals</h1><h2 id='be-declarative-if-possible'>Be declarative if possible!</h2>
+<blockquote>
+<p>Imperative example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">squareNumbers</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">*=</span> <span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">array</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<span class="nx">squareNumbers</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">squareNumbers</span><span class="p">(</span><span class="nx">array</span><span class="p">:</span> <span class="kr">number</span><span class="p">[]):</span> <span class="kr">number</span><span class="p">[]</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">*=</span> <span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">array</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">numbers</span><span class="p">:</span> <span class="kr">number</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<span class="nx">squareNumbers</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>Declarative example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">squareNumbers</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">array</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">val</span> <span class="o">=&gt;</span> <span class="nx">val</span> <span class="o">*</span> <span class="nx">val</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<span class="nx">squareNumbers</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">squareNumbers</span><span class="p">(</span><span class="nx">array</span><span class="p">:</span> <span class="kr">number</span><span class="p">[]):</span> <span class="kr">number</span><span class="p">[]</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">array</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">val</span> <span class="o">=&gt;</span> <span class="nx">val</span> <span class="o">*</span> <span class="nx">val</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">numbers</span><span class="p">:</span> <span class="kr">number</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<span class="nx">squareNumbers</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span>
+</code></pre>
+<p><strong>Notice</strong> that the imperative approach requires specifying:</p>
+
+<ul>
+<li>How to loop through the array</li>
+<li>the order of the loop</li>
+<li>Logic</li>
+</ul>
+
+<p>Where the declarative version you have to specify:</p>
+
+<ul>
+<li>Logic</li>
+</ul>
+<h3 id='benefits-from-declarative-programming'>Benefits from declarative programming</h3>
+<ul>
+<li>minimizes mutability</li>
+<li>reduces state side-effects</li>
+<li>leads to more understandable code</li>
+<li>is just more scalable</li>
+</ul>
+<h2 id='intermediate-variables-amp-magic-numbers'>Intermediate variables &amp; Magic numbers</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">employee</span><span class="p">.</span><span class="nx">age</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do something</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">employeeType</span> <span class="o">===</span> <span class="s2">"manager"</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">employee</span><span class="p">.</span><span class="nx">age</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do something</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">employeeType</span> <span class="o">===</span> <span class="s2">"manager"</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Good example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">employee</span><span class="p">.</span><span class="nx">age</span> <span class="o">&gt;</span> <span class="nx">pensionAge</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do something</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">employeeType</span> <span class="o">===</span> <span class="nx">employeeTypes</span><span class="p">.</span><span class="nx">manager</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">employee</span><span class="p">.</span><span class="nx">age</span> <span class="o">&gt;</span> <span class="nx">pensionAge</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do something</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">employeeType</span> <span class="o">===</span> <span class="nx">employeeTypes</span><span class="p">.</span><span class="nx">manager</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre>
+<p>Prefer variables to be expressive!</p>
+
+<p><strong>Notice</strong>:
+how in the bad example you have no idea what the intent of the number or string actually is, which might require a comment, but can be avoid as seen in good example and there is no magic numbers!</p>
+<h3 id='benefits'>Benefits</h3>
+<ul>
+<li>Avoids noone knows what the magic numbers is</li>
+<li>Avoids typos using variables instead of strings</li>
+<li>Makes the code more searchable</li>
+<li>Gives intellisense support</li>
+</ul>
+<h2 id='ternary-can-be-elegant'>Ternary can be elegant</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">registrationFee</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">isSpeaker</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">registrationFee</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">registrationFee</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">registrationFee</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">isSpeaker</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">registrationFee</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">registrationFee</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Good example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">registrationFee</span> <span class="o">=</span> <span class="nx">isSpeaker</span> <span class="p">?</span> <span class="mi">0</span> <span class="p">:</span> <span class="mi">50</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">registrationFee</span><span class="p">:</span> <span class="kr">number</span> <span class="o">=</span> <span class="nx">isSpeaker</span> <span class="p">?</span> <span class="mi">0</span> <span class="p">:</span> <span class="mi">50</span><span class="p">;</span>
+</code></pre>
+<p><strong>Notice</strong>:</p>
+
+<ul>
+<li>You only have to write out the varible once.</li>
+<li>Fewer lines (yay!)</li>
+<li>Easier to read</li>
+</ul>
+<h2 id='don-39-t-be-anti-negative'>Don&#39;t be anti-negative</h2>
+<blockquote>
+<p>bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">IsNotLoggedIn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">IsNotLoggedIn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>good example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">loggedIn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">loggedIn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre>
+<p>Use positive conditionals, it is much easier/faster to decode when reading it</p>
+<h2 id='evaluate-booleans-implicitly'>Evaluate booleans implicitly</h2>
+<blockquote>
+<p>Bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">loggedIn</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">loggedIn</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Good example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">loggedIn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">loggedIn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do stuff</span>
+<span class="p">}</span>
+</code></pre>
+<p>Try saying both out loud, the second comes out as more natural language and it is less verbose. Which means it is easier to read as well.</p>
+<h1 id='comments'>Comments</h1><h2 id='general-rules'>General rules</h2>
+<blockquote>
+<p>Bad examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Set i = 1</span>
+
+<span class="c1">// Check user account is deactivated</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">// this should be refactored (see conditional rules)</span>
+
+<span class="c1">// I was too tired to refactor this pile of spaghetti code</span>
+
+<span class="c1">// Great sins against code</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Set i = 1</span>
+
+<span class="c1">// Check user account is deactivated</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">// this should be refactored (see conditional rules)</span>
+
+<span class="c1">// I was too tired to refactor this pile of spaghetti code</span>
+
+<span class="c1">// Great sins against code</span>
+</code></pre>
+<blockquote>
+<p>Good examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="c1">// see www.google.com/api for documentation</span>
+
+<span class="c1">// logic for calculating ticket fee</span>
+
+<span class="c1">// TODO: Refactor this anti-negative</span>
+
+<span class="c1">// HACK: API does not expose needed call yet</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="c1">// see www.google.com/api for documentation</span>
+
+<span class="c1">// logic for calculating ticket fee</span>
+
+<span class="c1">// TODO: Refactor this anti-negative</span>
+
+<span class="c1">// HACK: API does not expose needed call yet</span>
+</code></pre>
+<ul>
+<li>Prefer expressiv code over comments</li>
+<li>Use comments when code alone can&#39;t be sufficient</li>
+<li>Assume your reader can read</li>
+<li>Don&#39;t repeat yourself</li>
+<li>No apology comments (instead use TODO)</li>
+<li>No warning comments =&gt; refactor</li>
+<li>Change metadata belongs in source control, NOT comments</li>
+</ul>
+<h2 id='zombie-code'>Zombie code</h2>
+<p>Before out commenting code ask yourself:</p>
+
+<ul>
+<li>When, if ever, would this be uncommented?</li>
+<li>Can I just get it from the source control later?</li>
+<li>Is this incomplete work that should be worked via. a branch?</li>
+<li>Is this a feature that should be enable/disabled via. config/feature toggle?</li>
+</ul>
+<h1 id='react'>React</h1>
+<ul>
+<li>Only one component allowed pr. file</li>
+<li>Though multiple stateless or pure components are allowed pr. file</li>
+</ul>
+<h2 id='stateless-pure-components'>Stateless/Pure Components</h2>
+<blockquote>
+<p>bad example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">fn</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">message</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">message</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div&gt;</span><span class="err">;
+</span></code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">const</span> <span class="nx">fn</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">message</span> <span class="p">}:</span> <span class="p">{</span> <span class="nl">message</span><span class="p">:</span> <span class="kr">string</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">message</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div&gt;</span><span class="err">;
 </span></code></pre>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
-</tr>
-</tbody></table>
+<blockquote>
+<p>Good example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kd">function</span> <span class="nx">fn</span><span class="p">({</span> <span class="nx">message</span> <span class="p">})</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">message</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div&gt;</span><span class="err">;
+</span><span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="kd">function</span> <span class="nx">fn</span><span class="p">({</span> <span class="nx">message</span> <span class="p">}:</span> <span class="p">{</span> <span class="nl">message</span><span class="p">:</span> <span class="kr">string</span> <span class="p">})</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">message</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div&gt;</span><span class="err">;
+</span><span class="p">}</span>
+</code></pre><h2 id='naming'>Naming</h2>
+<ul>
+<li>Extensions: use <code>.js</code> always, not <code>.jsx</code></li>
+<li>Use PascalCase for filenames e.g. NotificationCard</li>
+<li>Use camelCase for instances of the components</li>
+<li>Use <code>index.js</code> for root components and refer to directory for import</li>
+</ul>
+
+<blockquote>
+<p>bad examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">notificationCard</span> <span class="nx">from</span> <span class="s2">"./NotificationCard"</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">NotificationCard</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">NotificationCard</span> <span class="o">/&gt;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">NotificationCard</span> <span class="nx">from</span> <span class="s2">"./NotificationCard/NotificationCard"</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">NotificationCard</span> <span class="nx">from</span> <span class="s2">"./NotificationCard/index"</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">import</span> <span class="nx">notificationCard</span> <span class="k">from</span> <span class="s2">"./NotificationCard"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">NotificationCard</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">NotificationCard</span> <span class="o">/&gt;</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="nx">NotificationCard</span> <span class="k">from</span> <span class="s2">"./NotificationCard/NotificationCard"</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="nx">NotificationCard</span> <span class="k">from</span> <span class="s2">"./NotificationCard/index"</span><span class="p">;</span>
+</code></pre>
+<blockquote>
+<p>good examples</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">NotificationCard</span> <span class="nx">from</span> <span class="s2">"./NotificationCard"</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">notificationCard</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">NotificationCard</span> <span class="o">/&gt;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">NotificationCard</span> <span class="nx">from</span> <span class="s2">"./NotificationCard"</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="k">import</span> <span class="nx">NotificationCard</span> <span class="k">from</span> <span class="s2">"./NotificationCard"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">notificationCard</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">NotificationCard</span> <span class="o">/&gt;</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="nx">NotificationCard</span> <span class="k">from</span> <span class="s2">"./NotificationCard"</span><span class="p">;</span>
+</code></pre>
+<p>Prefer normal functions over arrow functions. (see why <a href="https://github.com/airbnb/javascript/issues/794">here</a>)</p>
+<h2 id='props'>Props</h2>
+<blockquote>
+<p>Always use camelCase for prop naming!</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">firstName</span><span class="o">=</span><span class="s2">""</span> <span class="o">/&gt;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">firstName</span><span class="o">=</span><span class="s2">""</span> <span class="o">/&gt;</span>
+</code></pre>
+<blockquote>
+<p>Boolean props should omit value</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">hidden</span> <span class="o">/&gt;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">hidden</span> <span class="o">/&gt;</span>
+</code></pre>
+<blockquote>
+<p>Never use index as key</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="c1">// BAD</span>
+<span class="kr">const</span> <span class="nx">tasks</span> <span class="o">=</span> <span class="nx">tasks</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">task</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">Task</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">index</span><span class="p">}</span> <span class="p">{..</span><span class="nx">task</span><span class="p">}</span><span class="o">&gt;</span><span class="p">);</span>
+
+<span class="c1">// GOOD</span>
+<span class="kr">const</span> <span class="nx">tasks</span> <span class="o">=</span> <span class="nx">tasks</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">task</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">Task</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">task</span><span class="p">.</span><span class="nx">id</span><span class="p">}</span> <span class="p">{..</span><span class="nx">task</span><span class="p">}</span><span class="o">&gt;</span><span class="p">);</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="c1">// BAD</span>
+<span class="kd">const</span> <span class="nx">tasks</span> <span class="o">=</span> <span class="nx">tasks</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">task</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">Task</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">index</span><span class="p">}</span> <span class="p">{..</span><span class="nx">task</span><span class="p">}</span><span class="o">&gt;</span><span class="p">);</span>
+
+<span class="c1">// GOOD</span>
+<span class="kd">const</span> <span class="nx">tasks</span> <span class="o">=</span> <span class="nx">tasks</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">task</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">Task</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">task</span><span class="p">.</span><span class="nx">id</span><span class="p">}</span> <span class="p">{..</span><span class="nx">task</span><span class="p">}</span><span class="o">&gt;</span><span class="p">);</span>
+</code></pre><h3 id='prop-rules'>Prop rules</h3>
+<ul>
+<li>Use camelCase for props</li>
+<li>Boolean omit value</li>
+<li>Use id not index for key</li>
+<li>Always define <code>defaultProps</code></li>
+</ul>
+<h2 id='render-function'>Render function</h2>
+<blockquote>
+<p>Bad example (bind)</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Sad</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{::</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Sad</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Sad</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{::</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Sad</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Not prefered experimental</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="p">...</span>
+  <span class="c1">// ES7 bind way</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span> <span class="o">=</span> <span class="p">::</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Not</span> <span class="nx">prefered</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="p">...</span>
+  <span class="c1">// ES7 bind way</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span> <span class="o">=</span> <span class="p">::</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Not</span> <span class="nx">prefered</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Not prefered but acceptable example (arrow)</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="p">...</span>
+<span class="nx">constructor</span><span class="p">(){</span>
+  <span class="kr">super</span><span class="p">();</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">_handleclick</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">alright</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="p">...</span>
+<span class="kd">constructor</span><span class="p">(){</span>
+  <span class="k">super</span><span class="p">();</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">_handleclick</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">alright</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Not prefered but acceptable example (arrow)</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="p">...</span>
+  <span class="c1">// ES7 way</span>
+  <span class="nx">handleClick</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">a</span> <span class="nx">bit</span> <span class="nx">better</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="p">...</span>
+  <span class="c1">// ES7 way</span>
+  <span class="nx">handleClick</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">a</span> <span class="nx">bit</span> <span class="nx">better</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<blockquote>
+<p>Good example (bind)</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="p">...</span>
+<span class="nx">constructor</span><span class="p">(){</span>
+  <span class="kr">super</span><span class="p">();</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Good</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="p">...</span>
+<span class="kd">constructor</span><span class="p">(){</span>
+  <span class="k">super</span><span class="p">();</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Good</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<ul>
+<li>Keep the render function as clean and lean as possible</li>
+<li>Don&#39;t use bind in the render function</li>
+<li>Don&#39;t use arrow functions in the render function</li>
+</ul>
+
+<p>These will prevent the function from being re-created for each render.</p>
+
+<p><a href="http://egorsmirnov.me/2015/08/16/react-and-es6-part3.html">Futher reasoning</a></p>
+<h1 id='styling'>Styling</h1><h2 id='scss'>SCSS</h2>
+<blockquote>
+<p>File name example, scss file for <NotificationCard /> component</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">notificationCard</span><span class="p">.</span><span class="nx">scss</span><span class="p">;</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="nx">notificationCard</span><span class="p">.</span><span class="nx">scss</span><span class="p">;</span>
+</code></pre>
+<ul>
+<li>Prefer to use <code>*.scss</code> for styling, as it is better at controlling styles than inline JS styling.</li>
+<li>Use camelCase for when naming the a <code>*.scss</code> file</li>
+<li>Name the <code>*.scss</code> the same as the <code>*.js</code> file it belongs to</li>
+<li>Locate the <code>*.scss</code> as close to the <code>*.js</code> file it belongs to</li>
+</ul>
+
+<p>We are already using CSS modules so we won&#39;t experience encapsulation problems. Though this approach forces you to think about styling in a more component oriented way, which is good.
+This also makes it easier to use scss variables like colors, and it also makes it easier to write responsive designs when media queries is needed.</p>
+<h2 id='styled-components'>Styled-components</h2>
+<p>Some stuff on styled components</p>
+<h1 id='linting-amp-formatting'>Linting &amp; Formatting</h1><h2 id='linting'>Linting</h2>
+<p>We are following the AirBnb styleguide with minor modifications which should be include in these docs.</p>
+
+<p><a href="https://github.com/airbnb/javascript/tree/master/react">read more</a></p>
+<h2 id='formatting'>Formatting</h2>
+<p>We are using Prettier for formatting the code. </p>
+
+<p><a href="https://github.com/prettier/prettier">read more</a></p>
+<h2 id='process'>Process</h2>
+<p>Use the following process:</p>
+
+<ol>
+<li>Code</li>
+<li>Prettier (cmd + shift + p) =&gt; (search: format document)</li>
+<li>Eslint --fix (cmd + shift + p) =&gt; (search: eslint fix)</li>
+<li>Done!</li>
+</ol>
+<h1 id='testing'>Testing</h1>
+<p>We are currently using the following tools for testing:</p>
+
+<ul>
+<li><a href="https://facebook.github.io/jest/">Jest</a>, <a href="http://airbnb.io/enzyme/">enzyme</a> (Unit)</li>
+<li><a href="https://docs.cypress.io/guides/getting-started/why-cypress.html">Cypress</a> (E2E)</li>
+<li><a href="https://artillery.io/docs/">Artillery</a> (Load)</li>
+</ul>
+
+<p>Which test approach should we follow?</p>
+
+<ul>
+<li>TDD</li>
+<li>BDD</li>
+<li>DDD</li>
+</ul>
+
+<p>?</p>
+<h2 id='unit-tests'>Unit tests</h2>
+<blockquote>
+<p>naming example</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">describe</span><span class="p">(</span><span class="s2">"React components"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">describe</span><span class="p">(</span><span class="s2">"when testing them"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">it</span><span class="p">(</span><span class="s2">"should be fun"</span><span class="p">);</span>
+    <span class="nx">describe</span><span class="p">(</span><span class="s2">"when choosing the test runner"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">it</span><span class="p">(</span><span class="s2">"should be Jest"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre><pre class="highlight typescript tab-typescript"><code><span class="nx">describe</span><span class="p">(</span><span class="s2">"React components"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">describe</span><span class="p">(</span><span class="s2">"when testing them"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">it</span><span class="p">(</span><span class="s2">"should be fun"</span><span class="p">);</span>
+    <span class="nx">describe</span><span class="p">(</span><span class="s2">"when choosing the test runner"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">it</span><span class="p">(</span><span class="s2">"should be Jest"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+<ul>
+<li>Unit test files should be named the same as the file it is testing with post-fix <code>*.spec.js</code></li>
+<li>Unit test files should be located as close to the file it is testing as possible</li>
+<li>Use jest snapshots to avoid spending time on mocking</li>
+<li>Like in the naming paragraph aim to write describe and it messages which is &quot;natural language&quot; (see example)</li>
+</ul>
+
+<p>To run jest <code>yarn start jest</code></p>
+<h2 id='e2e'>E2E</h2>
+<ul>
+<li>When writing E2E make sure the test can be run completly separately without the need of relying on assumtions about present data or other tests/states</li>
+<li>E2E tests should be located separately from the project itself (currently in <code>/cypress</code>)</li>
+</ul>
+
+<p>To run Cypress <code>yarn run cypress</code> (currently not supporting Windows)</p>
+<h1 id='glossary'>Glossary</h1><h2 id='signal-to-noise-ratio'>Signal to Noise Ratio</h2>
+<p>The ratio of code that conveys intent
+to cruft</p>
+<h2 id='side-effects'>Side Effects</h2>
+<p>When a method does more than what its name
+describes. Avoid by refactoring to separate methods or
+selecting a more descriptive name</p>
+<h2 id='magnet-class'>Magnet Class</h2>
+<p>Class with ambiguous/high level name.
+Attracts lazy developers and becomes a dumping ground for
+unrelated logic. Characterized by low cohesion</p>
+<h2 id='cohesion'>Cohesion</h2>
+<p>A highly cohesive class has methods that revolve
+around a common purpose and frequently interact. A class
+with a clear responsibility should be highly cohesive.</p>
+<h2 id='the-outline-rule'>The Outline Rule</h2>
+<p>Strive to structure your code like an
+outline with multiple levels of abstractions. This aids the
+reader by converting implicit concepts in named explicit
+concepts. It also aids navigation when looking for bugs.</p>
+<h2 id='cyclomatic-complexity'>Cyclomatic Complexity</h2>
+<p>A measurement of the number of
+discrete paths through the code. Higher complexity is
+associated with difficulty reading, and more frequent bugs.</p>
+<h2 id='intermediate-variable'>Intermediate Variable</h2>
+<p>A variable that clarifies intent by
+providing a clear name to express the intent of a conditional.
+Useful technique to avoid writing a comment.</p>
+<h2 id='zombie-code'>Zombie Code</h2>
+<p>Code that is commented out in production.
+Often code that was previously used in production or was
+never completed. This noise that hinders reading and
+refactoring. Move to a branch or delete.</p>
+<h2 id='stringly-typed'>Stringly Typed</h2>
+<p>Using strings in conditionals instead of
+strongly typed alternatives like Booleans, enums or classes.
+Strive to stay strongly typed when working in strongly typed
+languages so you can lean on the compiler and enjoy
+Intellisense support.</p>
+<h2 id='primitive-obsession'>Primitive Obsession</h2>
+<p>Passing around a loose list of variables
+between methods instead of defining a class to encapsulate
+the concept.</p>
+<h2 id='dry'>DRY</h2>
+<p>Don’t repeat yourself. Each piece of logic/knowledge
+should exist in one place.</p>
+<h2 id='return-early'>Return Early</h2>
+<p>Return when there is nothing more to do in
+the method.</p>
+<h2 id='fail-fast'>Fail Fast</h2>
+<p>Throw an exception/return as soon as something
+required is missing or something unexpected occurs. This
+avoids failing slow which often masks the root cause.</p>
+<h2 id='fail-slow'>Fail slow</h2>
+<p>Swallowing an exception or continuing processing
+in a method when you already know that there’s no way the
+logic can succeed. Strive to fail fast so the root cause of the
+failure is easy to detect and unpredictable states aren’t
+created.</p>
+<h2 id='table-driven-method'>Table Driven Method</h2>
+<p>A method whose data and/or logic is
+driven via a data stored elsewhere (typically in a database or
+configuration file).</p>
+<h2 id='mayfly-variables'>Mayfly Variables</h2>
+<p>Variables that are initialized as late as
+possible and removed from scope as early as possible. Like a
+Mayfly, they have a very short lifespan. NOTE: Avoid this
+technique in JavaScript due to hoisting.</p>
+<h2 id='broken-window-theory'>Broken Window Theory</h2>
+<p>Don’t accept ugly hacks in the
+code, despite the fact that there may already be flaws in the
+system. Derived from a study that found once a window is
+broken in an abandoned building it quickly falls into further
+disrepair due to neglect.</p>
+<h2 id='boy-scout-rule'>Boy Scout Rule</h2>
+<p>When adding a feature or fixing a bug, strive
+to leave the code a little better than you found it</p>
 <h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
@@ -494,10 +1816,8 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="typescript">typescript</a>
           </div>
       </div>
     </div>
